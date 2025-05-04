@@ -186,5 +186,29 @@ console.warn(firstGame);
 console.warn(secondGame);
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const topGameElement = document.createElement("h4");
+topGameElement.innerText = firstGame.name;
+firstGameContainer.append(topGameElement);
 
 // do the same for the runner up item
+const runnerUpElement = document.createElement("h4");
+runnerUpElement.innerText = secondGame.name;
+secondGameContainer.append(runnerUpElement);
+
+// 取得輸入框和按鈕
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-btn");
+
+// 點擊搜尋按鈕後的處理邏輯
+searchButton.addEventListener("click", () => {
+	const keyword = searchInput.value.toLowerCase();
+
+	// 過濾符合關鍵字的遊戲
+	const matchedGames = GAMES_JSON.filter((game) =>
+		game.name.toLowerCase().includes(keyword)
+	);
+
+	// 清空原本顯示的卡片，顯示篩選結果
+	deleteChildElements(gamesContainer);
+	addGamesToPage(matchedGames);
+});
