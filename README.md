@@ -23,10 +23,12 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
+
+[![Video Walkthrough](https://img.youtube.com/vi/K_B0uuKsoIM/0.jpg)](https://youtu.be/K_B0uuKsoIM)
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with Mac Recording 
+GIF created with Mac Recording
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
